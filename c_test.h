@@ -49,15 +49,15 @@ static void _c_test_pass(void) {
 
 #define _c_test_assert(predicate, msg) do { _c_test_check_predicate(predicate, msg); } while (0)
 
-#define assert_eq(a, b, msg) _c_test_assert(a == b, msg)
-#define assert_ne(a, b, msg) _c_test_assert(a != b, msg)
-#define assert_lt(a, b, msg) _c_test_assert(a < b, msg)
-#define assert_lte(a, b, msg) _c_test_assert(a <= b, msg)
-#define assert_gt(a, b, msg) _c_test_assert(a > b, msg)
-#define assert_gte(a, b, msg) _c_test_assert(a >= b, msg)
+#define assert_eq(e, a, msg) _c_test_assert(e == a, msg)
+#define assert_ne(e, a, msg) _c_test_assert(e != a, msg)
+#define assert_lt(e, a, msg) _c_test_assert(e < a, msg)
+#define assert_lte(e, a, msg) _c_test_assert(e <= a, msg)
+#define assert_gt(e, a, msg) _c_test_assert(e > a, msg)
+#define assert_gte(e, a, msg) _c_test_assert(e >= a, msg)
 
-#define assert_str_eq(a, b, msg) _c_test_assert(0 == strcmp(a, b), msg)
-#define assert_str_ne(a, b, msg) _c_test_assert(0 != strcmp(a, b), msg)
+#define assert_str_eq(e, a, msg) _c_test_assert(0 == strcmp(e, a), msg)
+#define assert_str_ne(e, a, msg) _c_test_assert(0 != strcmp(e, a), msg)
 
 #define TEST(func) void _c_test_GLUE(test_, func) (void)
 
