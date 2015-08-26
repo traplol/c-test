@@ -32,4 +32,4 @@ Just call ```TEST_RUN(TheTestsName);``` somewhere that gets executed, usually in
 
 ```assert_str_eq(e, a, msg)``` Asserts string equality.
 
-```assert_str_eq(e, a, msg)``` Asserts string inequality.
+```assert_str_ne(e, a, msg)``` Asserts string inequality.
