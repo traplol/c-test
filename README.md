@@ -6,6 +6,8 @@ file that can be dropped into a project and be used to write module tests.
 # usage
 Create a new .c file and ```#include``` the module(s) to test along with ```#include "c_test.h"```.
 
+By default, output messages should be colored but you may disable this by defining ```C_TEST_NO_COLORS``` at some point before including ```c_test.h```
+
 ### Declare a test
 ```
 TEST(TheTestsName) {
