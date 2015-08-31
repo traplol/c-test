@@ -18,6 +18,8 @@ TEST(TheTestsName) {
 Just call ```TEST_RUN(TheTestsName);``` somewhere that gets executed, usually in ```main``` for test modules.
 
 ### Implemented Assertions
+```assert_p(p, msg)``` Asserts the predicate evaluates to true.
+
 ```assert_eq(e, a, msg)``` Asserts numeric e == a.
 
 ```assert_ne(e, a, msg)``` Asserts numeric e != a.
