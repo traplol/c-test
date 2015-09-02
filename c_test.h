@@ -40,7 +40,7 @@
 
 #define PUTS_PASS " : " ANSI_COLOR_GREEN "PASS" ANSI_COLOR_RESET
 #define PUTS_FAIL " : " ANSI_COLOR_RED "FAIL" ANSI_COLOR_RESET
-#define PRINTF_FAIL ANSI_COLOR_RED "assertion failed " ANSI_COLOR_RESET "in %s at " ANSI_COLOR_CYAN " L:%d" ANSI_COLOR_RESET "\n\t%s\n"
+#define PRINTF_FAIL ANSI_COLOR_RED "assertion failed " ANSI_COLOR_RESET "in %s at " ANSI_COLOR_CYAN "L:%d" ANSI_COLOR_RESET "\n\t%s\n"
 
 #else
 
