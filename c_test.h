@@ -93,10 +93,10 @@ static int _c_test_current_test_passed = 1;
 
 #define assert_eq(e, a, msg) _c_test_assert(e == a, msg)
 #define assert_ne(e, a, msg) _c_test_assert(e != a, msg)
-#define assert_lt(e, a, msg) _c_test_assert(e < a, msg)
-#define assert_lte(e, a, msg) _c_test_assert(e <= a, msg)
-#define assert_gt(e, a, msg) _c_test_assert(e > a, msg)
-#define assert_gte(e, a, msg) _c_test_assert(e >= a, msg)
+#define assert_lt(l, r, msg) _c_test_assert(l < r, msg)
+#define assert_lte(l, r, msg) _c_test_assert(l <= r, msg)
+#define assert_gt(l, r, msg) _c_test_assert(l > r, msg)
+#define assert_gte(l, r, msg) _c_test_assert(l >= r, msg)
 
 #define assert_str_eq(e, a, msg) _c_test_assert(0 == strcmp(e, a), msg)
 #define assert_str_ne(e, a, msg) _c_test_assert(0 != strcmp(e, a), msg)

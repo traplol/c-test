@@ -26,13 +26,13 @@ Just call ```TEST_RUN(TheTestsName);``` somewhere that gets executed, usually in
 
 ```assert_ne(e, a, msg)``` Asserts numeric e != a.
 
-```assert_lt(e, a, msg)``` Asserts numeric e < a.
+```assert_lt(l, r, msg)``` Asserts numeric l < r.
 
-```assert_lte(e, a, msg)``` Asserts numeric e <= a.
+```assert_lte(l, r, msg)``` Asserts numeric l <= r.
 
-```assert_gt(e, a, msg)``` Asserts numeric e > a.
+```assert_gt(l, r, msg)``` Asserts numeric l > r.
 
-```assert_gte(e, a, msg)``` Asserts numeric e >= a.
+```assert_gte(l, r, msg)``` Asserts numeric l >= r.
 
 ```assert_str_eq(e, a, msg)``` Asserts string equality.
 
