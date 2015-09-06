@@ -89,6 +89,9 @@ static int _c_test_current_test_passed = 1;
 
 #define _c_test_assert(predicate, msg) do { _c_test_check_predicate(predicate, msg); } while (0)
 
+#define autofail() _c_test_assert(0, "Autofail triggered.")
+#define fail(msg) _c_test_assert(0, msg)
+
 #define assert_p(p, msg) _c_test_assert(p, msg)
 
 #define assert_eq(e, a, msg) _c_test_assert(e == a, msg)

@@ -20,6 +20,10 @@ TEST(TheTestsName) {
 Just call ```TEST_RUN(TheTestsName);``` somewhere that gets executed, usually in ```main``` for test modules.
 
 ### Implemented Assertions
+```autofail()``` Causes the current test to automatically fail.
+
+```fail(msg)``` Causes the current test to fail with a message.
+
 ```assert_p(p, msg)``` Asserts the predicate evaluates to true.
 
 ```assert_eq(e, a, msg)``` Asserts numeric e == a.
